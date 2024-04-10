@@ -26,3 +26,14 @@ C:/Users/A200002851/OneDrive - Deutsche Telekom AG/Projects/lesson06/game/bin/De
 /Users/felixteutsch/.git/Game1_Felix/game/obj/Debug/net8.0/game.dll
 /Users/felixteutsch/.git/Game1_Felix/game/obj/Debug/net8.0/refint/game.dll
 /Users/felixteutsch/.git/Game1_Felix/game/obj/Debug/net8.0/game.pdb
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/game
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/game.deps.json
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/game.runtimeconfig.json
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/game.dll
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/game.pdb
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/libs.dll
+/Users/felixteutsch/.git/Game1_Felix/game/bin/Debug/net8.0/libs.pdb
+/Users/felixteutsch/.git/Game1_Felix/game/obj/Debug/net8.0/game.csproj.Up2Date
+/Users/felixteutsch/.git/Game1_Felix/game/obj/Debug/net8.0/game.genruntimeconfig.cache
+/Users/felixteutsch/.git/Game1_Felix/game/obj/Debug/net8.0/ref/game.dll
