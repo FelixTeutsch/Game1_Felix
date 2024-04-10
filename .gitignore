@@ -226,3 +226,4 @@ AppPackages/
 #####
 game/obj/Debug/*
 libs/obj/Debug/*
+game/obj/*
