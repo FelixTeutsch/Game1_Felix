@@ -1,11 +1,12 @@
 namespace libs;
 
-public class Queen : GameObject
+public class Bishop : GameObject
 {
-    public Queen() : base()
+    public Bishop() : base()
     {
         this.Type = GameObjectType.Queen;
-        this.CharRepresentation = '♕';
+        this.CharRepresentation = '♗';
+        this.Color = ConsoleColor.DarkGreen;
     }
 
 

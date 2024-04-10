@@ -16,7 +16,8 @@ public static class FileHandler
 
     private static void Initialize()
     {
-        if(Environment.GetEnvironmentVariable(envVar) != null){
+        if (Environment.GetEnvironmentVariable(envVar) != null)
+        {
             filePath = Environment.GetEnvironmentVariable(envVar);
         };
     }

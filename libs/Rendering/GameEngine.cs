@@ -17,44 +17,66 @@ public static class GameEngine
     //TODO implement a listener interface
 
 
-    public static Map GetMap() {
+    public static Map GetMap()
+    {
         return map;
     }
 
-    public static GameObject GetFocusedObject(){
+    public static GameObject GetFocusedObject()
+    {
         return _focusedObject;
     }
 
-    public static void Setup(){
+    public static void ChangeFocusedObject()
+    {
+        int index = gameObjects.IndexOf(_focusedObject) + 1;
+        index = index % gameObjects.Count;
+        _focusedObject = gameObjects[index];
+    }
+
+    public static void Setup()
+    {
         dynamic gameData = FileHandler.ReadJson();
-        
+
         map.MapWidth = gameData.map.width;
         map.MapHeight = gameData.map.height;
 
         foreach (var gameObject in gameData.gameObjects)
         {
             GameObject newObj = new GameObject();
-            int type = (int)gameObject.Type;
+            string type = (string)gameObject.Type;
 
             switch (type)
             {
-                case 0:
-                    newObj = gameObject.ToObject<Queen>();
+                case "rook":
+                    newObj = gameObject.ToObject<Rook>();
                     break;
-                case 1:
+                case "king":
                     newObj = gameObject.ToObject<King>();
                     break;
+                case "queen":
+                    newObj = gameObject.ToObject<Queen>();
+                    break;
+                case "knight":
+                    newObj = gameObject.ToObject<Queen>();
+                    break;
+                case "bishop":
+                    newObj = gameObject.ToObject<Queen>();
+                    break;
             }
-                        
+
             AddGameObject(newObj);
         }
+
+        _focusedObject = gameObjects[0];
     }
 
-    public static void Render() {
+    public static void Render()
+    {
         //Clean the map
         Console.Clear();
 
-        _focusedObject = gameObjects[0];
+        //_focusedObject = gameObjects[0];
 
         map.Initialize();
 
@@ -70,29 +92,33 @@ public static class GameEngine
             Console.WriteLine();
         }
     }
-    
-    public static void AddGameObject(GameObject gameObject){
+
+    public static void AddGameObject(GameObject gameObject)
+    {
         gameObjects.Add(gameObject);
     }
 
-    private static void PlaceGameObjects(){
-        
-        gameObjects.ForEach(delegate(GameObject obj)
+    private static void PlaceGameObjects()
+    {
+
+        gameObjects.ForEach(delegate (GameObject obj)
         {
             map.Set(obj);
         });
     }
 
-    private static void DrawObject(GameObject gameObject){
-        
+    private static void DrawObject(GameObject gameObject)
+    {
+
         Console.ResetColor();
 
-        if(gameObject != null)
+        if (gameObject != null)
         {
             Console.ForegroundColor = gameObject.Color;
             Console.Write(gameObject.CharRepresentation);
         }
-        else{
+        else
+        {
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.Write(' ');
         }

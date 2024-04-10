@@ -1,27 +1,57 @@
 {
-    "map": {
-      "width": 10,
-      "height": 8 
-    },
-    "gameObjects": [
-      {
-        "Type": 1,
-        "Color": 2,
-        "PosX": 4,
-        "PosY": 7
-      },
-      {
-        "Type": 0,
-        "Color": 5,
-        "PosX": 2,
-        "PosY": 1,
-        "CharRepresentation": "♘"
-      },
-      {
-        "Type": 1,
-        "Color": 6,
-        "PosX": 2,
-        "PosY": 2
-      }
-    ]
-  }
+	"map": {
+		"width": 8,
+		"height": 8
+	},
+	"gameObjects": [
+		{
+			"Type": "knight",
+			"Color": 2,
+			"PosX": 1,
+			"PosY": 0
+		},
+		{
+			"Type": "bishop",
+			"Color": 2,
+			"PosX": 2,
+			"PosY": 0
+		},
+		{
+			"Type": "queen",
+			"Color": 2,
+			"PosX": 3,
+			"PosY": 0
+		},
+		{
+			"Type": "king",
+			"Color": 2,
+			"PosX": 4,
+			"PosY": 0
+		},
+
+		{
+			"Type": "bishop",
+			"Color": 2,
+			"PosX": 5,
+			"PosY": 0
+		},
+		{
+			"Type": "knight",
+			"Color": 2,
+			"PosX": 6,
+			"PosY": 0
+		},
+		{
+			"Type": "rook",
+			"Color": 2,
+			"PosX": 7,
+			"PosY": 0
+		},
+		{
+			"Type": "rook",
+			"Color": 2,
+			"PosX": 0,
+			"PosY": 0
+		}
+	]
+}

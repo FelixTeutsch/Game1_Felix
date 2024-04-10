@@ -1,11 +1,11 @@
 namespace libs;
 
-public class Queen : GameObject
+public class Knight : GameObject
 {
-    public Queen() : base()
+    public Knight() : base()
     {
         this.Type = GameObjectType.Queen;
-        this.CharRepresentation = '♕';
+        this.CharRepresentation = '♘';
     }
 
 

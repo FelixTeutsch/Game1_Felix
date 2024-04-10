@@ -1,13 +1,12 @@
 namespace libs;
 
-public class Queen : GameObject
+public class Rook : GameObject
 {
-    public Queen() : base()
+    public Rook() : base()
     {
         this.Type = GameObjectType.Queen;
-        this.CharRepresentation = '♕';
+        this.CharRepresentation = '♖';
     }
-
 
     public override void Move(int dx, int dy)
     {
