@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HpMx2M5cnah4KAljfrC0eO2mqkw8q2+QhgcAoHY9ewZdG7Nh0lLJ/wTVvG1GqXajBtnSiNRSnD2aUEyvafdYEQ==",
+  "dgSpecHash": "f2jvZvuni3oL4D8JMkz4y6ZzxMpLo0r/wI4axJMeQV+iy1qtddyLci46Kkh3PzBVTzhfrMBRhu96IWQPPGtxyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson06\\libs\\libs.csproj",
+  "projectFilePath": "/Users/felixteutsch/.git/Game1_Felix/libs/libs.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\A200002851\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "/Users/felixteutsch/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
